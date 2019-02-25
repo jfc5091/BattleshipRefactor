@@ -10,7 +10,7 @@ public class Gunship extends Upgrades {
      *
      * @param ship The original ship
      */
-    public Gunship(Ship ship) {
+    public Gunship(SpaceShip ship) {
         super(ship);
     }
 

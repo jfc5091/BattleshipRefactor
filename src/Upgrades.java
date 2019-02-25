@@ -1,8 +1,9 @@
-public abstract class Upgrades implements Ship{
+public abstract class Upgrades extends SpaceShip{
 
-    private Ship ship;
+    private SpaceShip ship;
 
-    public Upgrades (Ship ship){
+    public Upgrades (SpaceShip ship){
+        super(ship.getName());
         this.ship = ship;
     }
 

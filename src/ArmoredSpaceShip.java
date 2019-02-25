@@ -10,7 +10,7 @@ public class ArmoredSpaceShip extends Upgrades {
      *
      * @param ship The original ship
      */
-    public ArmoredSpaceShip(Ship ship) {
+    public ArmoredSpaceShip(SpaceShip ship) {
         super(ship);
     }
 

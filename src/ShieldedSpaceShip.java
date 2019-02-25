@@ -14,7 +14,7 @@ public class ShieldedSpaceShip extends Upgrades {
      *
      * @param ship The original ship
      */
-    public ShieldedSpaceShip(Ship ship) {
+    public ShieldedSpaceShip(SpaceShip ship) {
         super(ship);
 
         shieldHitPoints = 500;
