@@ -3,7 +3,7 @@
  *
  * Created by Bobby on 6/30/2017.
  */
-public class SpaceShip {
+public class SpaceShip implements Ship{
 
     private String name;
     private int totalHitPoints;
@@ -53,6 +53,9 @@ public class SpaceShip {
         int damage = attacker.getDamage();
         deductHitPoints(damage);
     }
+
+    @Override
+    public void shieldProtection() {}
 
     /**
      * Returns true if the ship has been destroyed.

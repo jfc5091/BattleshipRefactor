@@ -5,17 +5,17 @@
  *
  * Created by Bobby on 6/30/2017.
  */
-public class ShieldedSpaceShip extends SpaceShip {
+public class ShieldedSpaceShip extends Upgrades {
 
     private int shieldHitPoints;
 
     /**
      * Creates a basic, level-1 ship with the given name.
      *
-     * @param name The name given to the ship by its player/owner.
+     * @param ship The original ship
      */
-    public ShieldedSpaceShip(String name) {
-        super(name);
+    public ShieldedSpaceShip(Ship ship) {
+        super(ship);
 
         shieldHitPoints = 500;
     }

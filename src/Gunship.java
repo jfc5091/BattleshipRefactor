@@ -4,14 +4,14 @@
  *
  * Created by Bobby on 6/30/2017.
  */
-public class Gunship extends SpaceShip {
+public class Gunship extends Upgrades {
     /**
      * Creates a basic, level-1 ship with the given name.
      *
-     * @param name The name given to the ship by its player/owner.
+     * @param ship The original ship
      */
-    public Gunship(String name) {
-        super(name);
+    public Gunship(Ship ship) {
+        super(ship);
     }
 
     /**

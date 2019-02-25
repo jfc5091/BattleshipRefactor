@@ -4,14 +4,14 @@
  *
  * Created by Bobby on 6/30/2017.
  */
-public class ArmoredSpaceShip extends SpaceShip {
+public class ArmoredSpaceShip extends Upgrades {
     /**
      * Creates a level-10 armored ship with the given name.
      *
-     * @param name The name given to the ship by its player/owner.
+     * @param ship The original ship
      */
-    public ArmoredSpaceShip(String name) {
-        super(name);
+    public ArmoredSpaceShip(Ship ship) {
+        super(ship);
     }
 
     /**
