@@ -1,15 +1,37 @@
-public abstract class Upgrades extends SpaceShip{
+public abstract class Upgrades implements Ship{
 
     private SpaceShip ship;
 
     public Upgrades (SpaceShip ship){
-        super(ship.getName());
         this.ship = ship;
     }
 
-    public int getDamage(){return this.ship.getDamage();}
+    @Override
+    public String getName() {
+        return ship.getName();
+    }
 
-    public void deductHitPoints(int amount){this.ship.deductHitPoints(amount);}
+    @Override
+    public int getTotalHitPoints() {
+        return ship.getTotalHitPoints();
+    }
 
-    public void shieldProtection(){this.ship.shieldProtection();}
+    @Override
+    public int getCurrentHitPoints() {
+        return ship.getCurrentHitPoints();
+    }
+
+    @Override
+    public void underAttack(SpaceShip attacker) {
+        ship.underAttack(attacker);
+    }
+
+    @Override
+    public boolean isDestroyed() {
+        return ship.isDestroyed();
+    }
+
+    public int getDamage(){return ship.getDamage();}
+
+    public void deductHitPoints(int amount){ship.deductHitPoints(amount);}
 }

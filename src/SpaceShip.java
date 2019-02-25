@@ -54,9 +54,6 @@ public class SpaceShip implements Ship{
         deductHitPoints(damage);
     }
 
-    @Override
-    public void shieldProtection() {}
-
     /**
      * Returns true if the ship has been destroyed.
      *

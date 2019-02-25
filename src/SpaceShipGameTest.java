@@ -89,7 +89,7 @@ public class SpaceShipGameTest {
     public void createGunship() {
         String name = "Millennium Falcon";
         // MODIFY THE FOLLOWING LINE AS NEEDED TO CREATE A GUNSHIP
-        SpaceShip ship = new Gunship(new SpaceShip(name));
+        Ship ship = new Gunship(new SpaceShip(name));
 
         // DO NOT MODIFY BELOW THIS LINE
         assertEquals("Names do not match!", name, ship.getName());
@@ -109,7 +109,7 @@ public class SpaceShipGameTest {
     public void createShieldedShip() {
         String name = "Red 5";
         // MODIFY THE FOLLOWING LINE AS NEEDED TO CREATE A GUNSHIP
-        SpaceShip ship = new ShieldedSpaceShip(new SpaceShip(name));
+        Ship ship = new ShieldedSpaceShip(new SpaceShip(name));
 
         // DO NOT MODIFY BELOW THIS LINE
         assertEquals("Names do not match!", name, ship.getName());
@@ -127,7 +127,7 @@ public class SpaceShipGameTest {
     @Test
     public void deductHitPointsShieldedShip() {
         // MODIFY THE FOLLOWING LINE AS NEEDED TO CREATE SHIELDED SHIP
-        SpaceShip ship = new ShieldedSpaceShip(new SpaceShip("Serenity"));
+        Ship ship = new ShieldedSpaceShip(new SpaceShip("Serenity"));
 
         // DO NOT MODIFY BELOW THIS LINE
         int amount = 400;
@@ -149,7 +149,7 @@ public class SpaceShipGameTest {
     public void createArmoredSpaceShip() {
         String name = "Excelsior";
         // MODIFY THE FOLLOWING LINE AS NEEDED TO CREATE AN ARMORED SHIP
-        SpaceShip ship = new ArmoredSpaceShip(new SpaceShip(name));
+        Ship ship = new ArmoredSpaceShip(new SpaceShip(name));
 
         // DO NOT MODIFY BELOW THIS LINE
         assertEquals("Names do not match!", name, ship.getName());
@@ -164,7 +164,7 @@ public class SpaceShipGameTest {
     @Test
     public void deductHitPointsArmoredSpaceShip() {
         // MODIFY THE FOLLOWING LINE AS NEEDED TO CREATE ARMORED SHIP
-        SpaceShip ship = new ArmoredSpaceShip(new SpaceShip("The Flying Dutchman"));
+        Ship ship = new ArmoredSpaceShip(new SpaceShip("The Flying Dutchman"));
 
         // DO NOT MODIFY BELOW THIS LINE
         int amount = 400;
